@@ -64,8 +64,8 @@ def find_room_corners_recursively(coords: Tuple[int, int],
         if (x, y) in room_corners:
             return
 
-        # if not then we have to remember our former crawling direction to find the right way to continue crawling
-        # we always have to make the first possible right turn
+        # if not then we have to remember our former crawling direction to find the right way to continue crawling.
+        # We always have to make the first possible right turn.
         prev_dx, prev_dy = direction
 
         # here we find our new crawling direction
