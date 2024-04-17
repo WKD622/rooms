@@ -68,7 +68,7 @@ def solution1(flat: Map):
     The whole map is a graph, where each vertex represents one character from the map.
 
     Method:
-    It draws a random vertex from not_visited vertices set until there are vertices in the set:
+    It draws a random vertex from not_visited vertices set until there are no vertices in the set:
     a) if it's a wall then we just add it to visited vertices set and remove from not_visited set
     b) if it's a vertex inside a room (white space, chair, or anything else) we just recursively explore the room by
        spreading in all the directions (right, down, left, up) onto not visited vertices, meanwhile counting the chairs.
